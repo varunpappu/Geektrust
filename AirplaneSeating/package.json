@@ -1,0 +1,35 @@
+{
+  "name": "airplane-seating",
+  "version": "1.0.0",
+  "description": "A simple problem to find sit people in an airplane",
+  "main": "index.js",
+  "scripts": {
+    "dev-server": "nodemon",
+    "install": "npm run build",
+    "build": "rimraf ./build && tsc",
+    "start": "node build/index.js",
+    "lint": "eslint . --ext .ts",
+    "test": "mocha -r ts-node/register src/spec/**/unittest.ts"
+  },
+  "keywords": [],
+  "author": "Varun Subramanian",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.6.2",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^7.8.0",
+    "mocha": "^8.1.3",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "glob": "^7.1.6"
+  }
+}
